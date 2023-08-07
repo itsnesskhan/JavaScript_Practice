@@ -15,7 +15,7 @@ let max =  arr.reduce((max, curr)=>{
     if(curr>max)
        max = curr;
     return max;   
-}, 0);
+}, 0);  // 0 is the default value of max
 
 console.log(max)
 
@@ -34,7 +34,7 @@ console.log(usernames)
 
 // count person with same age 
 
-let ageCount = users.reduce((acc, curr)=>{
+let ageCount = users.reduce((acc, curr, index)=>{
     if(acc[curr.age])
        acc[curr.age]++;
     else

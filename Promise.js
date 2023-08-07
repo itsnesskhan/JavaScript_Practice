@@ -1,4 +1,4 @@
-var age=15
+var age=18
      var pro1 = new Promise((resolve, reject) =>{
 
         if(age >=18){
