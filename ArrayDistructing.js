@@ -23,3 +23,7 @@ console.log(p, q, s);
 
 [r,s] = getData();
 console.log(r,s, typeof s);
+
+const tedate = "15/10/1998";
+const [date, month, year ]= tedate.split("/").map(Number);
+console.log(date, typeof date)

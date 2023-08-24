@@ -55,3 +55,8 @@ console.log(names);
 //splice(start, deleteCount, item0)
 names.splice(2,0,'Jaime Lennister', 'Jon Snow');
 console.log(names);
+
+let date = "15-10-1998";
+[day, month, year] = date.split("-");
+console.log(day)
+console.log(typeof day)
