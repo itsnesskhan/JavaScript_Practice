@@ -1,0 +1,23 @@
+console.log(a);
+// console.log(b);
+// console.log(c);  
+
+var a = 10;
+let b = 100;
+const c = 1000;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+{
+    var a = 10;
+    let b = 100;
+    const c = 1000;  
+    console.log("block a ",a);
+    console.log("block b",b);
+    console.log("block c",c);
+    
+     //a and  b only accessible with the block
+     //var declare in global scope 
+}

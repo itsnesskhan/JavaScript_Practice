@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>localStorage</h1>
+<script>
+localStorage.setItem('name','Nasser');
+localStorage.setItem('name2','Mohit');
+localStorage.removeItem('name');
+// localStorage.clear()
+
+console.log(localStorage.getItem('name'));
+console.log(localStorage.getItem('name2'));
+
+// way to save objects in localstorage
+const name = {
+    firstname: "Mohit",
+    lastname: "Malve"
+}
+
+localStorage.setItem("obj", name);
+console.log(localStorage.getItem("obj").firstname);
+// it got saved as string that's why not able to access firstname
+
+localStorage.setItem("ob", JSON.stringify(name));
+console.log(localStorage.getItem("ob"))
+console.log(localStorage.getItem("ob").firstname)
+//wont be able to call firstname cause still is string
+
+console.log(JSON.parse(localStorage.getItem("ob")).firstname)
+
+</script>
+</body>
+</html>
