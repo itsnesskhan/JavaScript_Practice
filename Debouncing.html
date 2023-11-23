@@ -8,7 +8,7 @@
 <body>
     <h1>Debouncing</h1>
     <label for="search">search</label>
-    <input type="text" id="search" onchange="betterFun">
+    <input type="text" id="search" onchange="betterFun()">
 <script>
     let count=0;
     function getData(){
@@ -17,12 +17,12 @@
 
     function debounce(call, time){
         let timer;
-        return function(){
-            if(timer) clearTimeout(timer)
-        setTimeout(() => {
+       return function(){
+        if(timer) clearTimeout(timer);
+        setTimeout(()=>{
             call()
-        }, time);
-        } 
+        },time)
+       }
     } 
 
     let betterFun = debounce(getData,1000);
